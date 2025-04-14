@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Validación del formulario de registro
+
     const registerForm = document.getElementById('registerForm');
     if (registerForm) {
         registerForm.addEventListener('submit', function(e) {
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Validación del formulario de login
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', function(e) {
@@ -38,4 +37,15 @@ document.addEventListener('DOMContentLoaded', function() {
             return true;
         });
     }
+});
+
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm_password').value;
+        
+        if (password !== confirmPassword) {
+            e.preventDefault();
+            document.querySelector('.error').textContent = 'Las contraseñas no coinciden';
+            document.querySelector('.error').style.display = 'block';
+        }
 });
