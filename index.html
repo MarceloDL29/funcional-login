@@ -10,8 +10,11 @@
     <div class="container">
         <form id="loginForm" action="includes/login.php" method="POST">
             <h2>Iniciar Sesión</h2>
-            <img src="" id="imgLogin">
-            
+          
+            <div class="login-image">
+                <img src="assets/images/Marcelodl29-banner.png" alt="Icono de login">
+            </div>
+
             <?php if (isset($_GET['error'])) { ?>
                 <div class="error"><?php echo $_GET['error']; ?></div>
             <?php } ?>
