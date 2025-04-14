@@ -3,7 +3,7 @@
  A secure login and registration system built with modern web technologies.
 
 ## System Preview
-<img src="">
+<img src="assets/images/login-register.png">
 
 ## ✨Features
 * ✅ Complete authentication flow (register/login/dashboard/logout)
