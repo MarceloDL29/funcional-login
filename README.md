@@ -1,4 +1,4 @@
-# login-funcional
+# funcional-login
  
  A secure login and registration system built with modern web technologies.
 
